@@ -1,27 +1,24 @@
-# App
+# My Store by Terevena Reda 
+### An e-commerce website made by (Angular) front-end using Single Page Application(SPA) technology. Along with some styling.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## [Pages]
+* Home [Productslist] <br/>[You can easily add any item you like to cart]
+* Cart <br/>[Products that you added]
+* Product Details <br/>[By clicking on the button "View item"].. you will go to the details of this product item directly
+* Checkout<br/> [You can finally write down your information and complete your order]
+* Success<br/> [Congrats! You have completed your order successfully ]
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## [Built With]
+* [![Angular][Angular.io]][Angular-url]
+* [![Bootstrap][Bootstrap.com]][Bootstrap-url] for styling some btns, cards, input(text, textarea)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## [Download And installation]
+* Install dependencies
+npm install
+* Run locally
+ng serve

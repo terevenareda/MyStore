@@ -1,0 +1,64 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content=" initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <script src="https://kit.fontawesome.com/a8ac157e8f.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100;300;400&family=Cairo:wght@300;400;500;600;700&family=Roboto:ital,wght@0,500;1,400&family=Work+Sans:wght@200;300;400;500;600;800&display=swap" rel="stylesheet">
+  <title>MY STORE</title>
+</head>
+<body>
+<ng-container *ngIf="product.length !=0" >
+  <div class="cart">
+    <div class="cart-item">
+      <table class="cart-product">
+        <thead>
+          <tr class="tr">
+            <th class="th">Product name</th>
+            <th class="th">Product image</th>
+            <th class="th">Description</th>
+            <th class="th">Price</th>
+            <th class="th">Quantity</th>
+            <th class="th">Total</th>
+            <th class="th">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of product">
+            <td>{{item.name}}</td>
+            <td><img src="{{item.image}}" style="width: 100px; height: 70px"></td>
+            <td>{{item.description}}</td>
+            <td>{{item.price}}$</td>
+            <td>{{item.quantity}}</td>
+            <td>{{item.price * item.quantity}}$</td>
+            <td>
+              <button (click)="removeitem(item)" class="add"><i>Delete</i></button>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="6"></td>
+            <td><button class="add2" routerLink="/checkout">Checkout</button></td>
+            <td>Grand total : ${{gettotalprice()}}</td>
+          </tr>
+        </tbody>
+        </table>
+    </div>
+     </div>
+
+
+
+</ng-container>
+<ng-container *ngIf="product.length ==0">
+<div class="boxcontainer">
+  <div class="box">
+    <img  src="./assets/preview.png" alt="">
+    <h3>Add items to your cart</h3>
+    <a class="btn" href="index.html">Add to cart</a>
+  </div>
+</div>
+</ng-container>
+</body>
+
+

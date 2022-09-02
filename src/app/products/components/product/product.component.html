@@ -1,0 +1,12 @@
+
+  <div>
+    <img  src="{{data.image}}" alt="" class="pic">
+    <h3 >{{data.name}}</h3>
+    <p class="price">{{data.price}}$</p>
+    <div class="quantity" ><span >quantity:</span>
+    <input class ="input" type="number" min="1" max="100" value="1" [(ngModel)]="data.quantity" >
+    </div>
+    <a class="add" (click)="view(data)" >View item</a>
+    <a class="add"(click)="add(data)">Add to cart</a>
+  </div>
+

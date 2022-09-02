@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=" initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/a8ac157e8f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100;300;400&family=Cairo:wght@300;400;500;600;700&family=Roboto:ital,wght@0,500;1,400&family=Work+Sans:wght@200;300;400;500;600;800&display=swap" rel="stylesheet">
+    <title>MY STORE</title>
+</head>
+<body>
+  <div class="boxcontainer">
+    <div class="box" >
+      <form [formGroup]="checkout"  (ngSubmit)="OnSubmit()" >
+        <div class="form-group">
+          <label for="name">Full name</label>
+          <input formControlName="name" class="form-control" [ngClass]="{'is-invalid':submitted && checkout.controls.name.errors}" type="text" placeholder="Enter your name"
+           [(ngModel)]="name" (ngModelChange)="orderevent($event)" >
+          <span class="text-danger" *ngIf="checkout.controls.name.hasError('required') && checkout.controls.name.touched">Name is required</span>
+          <span class="text-danger" *ngIf="checkout.controls.name.hasError('minlength')">Enter atleast 3 characters.</span>
+          <span class="text-danger" *ngIf="checkout.controls.name.hasError('pattern')">Name must be from A to Z</span>
+        </div>
+      <div >
+        <label for="address" formGroupName="address">Address</label>
+        <input formControlName="address" class="form-control" [ngClass]="{'is-invalid':submitted && checkout.controls.address.errors}"
+         type="text" placeholder="Enter your address"  [(ngModel)]="address" (ngModelChange)="orderevent($event)">
+        <span class="text-danger" *ngIf="checkout.controls.address.hasError('required') && checkout.controls.address.touched">Address is required</span>
+        <span class="text-danger" *ngIf="checkout.controls.address.invalid && checkout.controls.address.hasError('minlength')">Enter atleast 6 characters</span>
+
+      </div>
+      <div >
+        <label>Credit card number</label>
+        <input formControlName="creditcard" class="form-control" [ngClass]="{'is-invalid':submitted && checkout.controls.creditcard.errors}"
+        [(ngModel)]="creditcard" (ngModelChange)="orderevent($event)" type="text" placeholder="Enter you credit card number">
+        <span class="text-danger" *ngIf="checkout.controls.creditcard.invalid && checkout.controls.creditcard.touched">16-digits credit card number is required</span>
+
+      </div>
+
+      <input type="submit" class="btn"  value="Order now" >
+    </form>
+      </div>
+      </div>
+</body>
+
+

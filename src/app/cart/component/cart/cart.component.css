@@ -1,0 +1,143 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+:root {
+  --main-transition:0.3s;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 16px;
+
+}
+
+
+body{
+  font-family: "Anek Tamil", sans-serif;
+}
+a {
+  text-decoration: none;
+
+}
+ .boxcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 2rem;
+}
+ .boxcontainer .box {
+  text-align: center;
+  flex: 1 1 15rem;
+  padding: 2rem;
+  border: .15rem solid rgb(43, 70, 189);
+  border-radius: .5rem;
+  box-shadow: 0 0 5px rgb(26, 49, 151);
+  position: relative;
+  overflow: hidden;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+ .boxcontainer .box h3 {
+  padding: 1rem;
+  font-size: 1.3rem;
+  color: black;
+  font-weight: bolder;
+}
+.btn {
+  background-color: rgb(43, 70, 189);
+  color: white;
+  font-size: 1.5rem;
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 4rem ;
+
+  display: inline-block;
+  text-align: center;
+
+  cursor: pointer;
+  padding: 1rem 4rem;
+  border-radius: .6rem;
+}
+.btn:hover{
+  background: black;
+
+
+}
+
+ .add {
+  background-color: rgba(228, 26, 26, 0.897);
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  border-radius: .4rem;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+
+
+}
+.add2 {
+  background-color: rgb(6, 68, 6);
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  border-radius: .4rem;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+
+}
+table {
+  border-collapse:collapse;
+  box-shadow:0 0 5px rgb(26, 49, 151) ;
+  background-color: white;
+  text-align: center;
+  overflow: hidden;
+  padding: 50rem;
+
+}
+thead{
+  box-shadow:0 0 5px rgb(26, 49, 151) ;
+}
+th{
+  padding: 1rem 3.2rem;
+  text-transform: uppercase;
+  color: rgb(43, 70, 189);
+}
+td{
+  padding: 1rem 3rem;
+  font-weight: 600;
+}
+.add1{
+  display: flex;
+  margin: 1rem;
+}
+.alert{
+
+  background-color: rgb(235, 154, 154);
+  border: 1px solid rgb(128, 0, 0);
+  border-radius: 2px;
+  padding: .5rem;
+
+}
+.close{
+
+  margin: .2rem;
+  padding: .5rem;
+  color: rgb(128, 0, 0);
+  cursor: pointer;
+}
+

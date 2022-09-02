@@ -1,0 +1,108 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+:root {
+  --main-transition:0.3s;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 16px;
+
+}
+
+
+body{
+  font-family: "Anek Tamil", sans-serif;
+}
+a {
+  text-decoration: none;
+
+}
+.products .boxcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 2rem;
+}
+.products .boxcontainer .box {
+  text-align: center;
+  flex: 1 1 15rem;
+  padding: 2rem;
+  border: .15rem solid rgb(43, 70, 189);
+  border-radius: .5rem;
+  box-shadow: 0 0 5px rgb(26, 49, 151);
+  position: relative;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+.products .boxcontainer .box h3 {
+  padding: 1rem;
+  font-size: 1.3rem;
+  color: black;
+}
+
+.products .boxcontainer .box .price{
+  padding: 1rem;
+  color: orangered;
+  font-size: 1.2rem;
+}
+.products .boxcontainer .box .quantity{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .2rem;
+  margin-bottom: .7rem;
+}
+.products .boxcontainer .box .quantity span{
+  padding: .5rem;
+  color: black;
+  font-size: 1.2rem;
+}
+.products .boxcontainer .box .input{
+  border: .1rem solid black;
+  border-radius: 5px;
+  align-items: center;
+  padding-left: .5rem;
+  padding-top:.1rem ;
+  padding-bottom: .1rem;
+  font-weight: 500;
+  background-color: rgb(245, 240, 240);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.products .boxcontainer .box .add {
+  background-color: rgb(43, 70, 189);
+  color: white;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border-radius: .4rem;
+  text-align: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+
+
+}
+.products .boxcontainer .box:hover{
+  transform: scale(1.05);
+}
+
+.products .boxcontainer .box .add:hover{
+  background-color: black;
+}
+.pic {
+  height: 194px;
+  width: 259px;
+}

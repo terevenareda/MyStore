@@ -1,0 +1,89 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+:root {
+  --main-transition:0.3s;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 16px;
+
+}
+
+
+body{
+  font-family: "Anek Tamil", sans-serif;
+}
+a {
+  text-decoration: none;
+
+}
+ .boxcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 2rem;
+}
+ .boxcontainer .box {
+  text-align: center;
+  flex: 1 1 15rem;
+  padding: 2rem;
+  border: .15rem solid rgb(43, 70, 189);
+  border-radius: .5rem;
+  box-shadow: 0 0 5px rgb(26, 49, 151);
+  position: relative;
+  overflow: hidden;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+ .boxcontainer .box h3 {
+  padding: 1rem;
+  font-size: 1.3rem;
+  color: black;
+  font-weight: bolder;
+}
+.btn {
+  background-color: rgb(43, 70, 189);
+  color: white;
+  font-size: 1.5rem;
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 1rem ;
+
+  display: inline-block;
+  text-align: center;
+
+  cursor: pointer;
+  padding: .5rem 3rem;
+  border-radius: .6rem;
+}
+.btn:hover{
+  background: black;
+
+
+
+}
+.info{
+  margin: 3rem;
+}
+label {
+  font-size: 28px;
+  border: 0;
+  outline: none;
+  padding: 2rem;
+}
+input {
+  font-size: 16px;
+  padding: .5rem 1rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  outline: black;
+}

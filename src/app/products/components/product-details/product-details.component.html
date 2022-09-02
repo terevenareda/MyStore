@@ -1,0 +1,16 @@
+<section class="products">
+  <div class="boxcontainer">
+    <div class="box">
+<div>
+  <img  src="{{item.image}}" alt="" class="pic">
+  <h3 >{{item.name}}</h3>
+  <h4>{{item.description}}</h4>
+  <p class="price">{{item.price}}$</p>
+  <div class="quantity" ><span>quantity:</span>
+  <input class ="input" type="number" min="1" max="100" value="1" [(ngModel)]="item.quantity" >
+  </div>
+  <a class="add"(click)="addtocart(item)">Add to cart</a>
+</div>
+</div>
+</div>
+</section>
