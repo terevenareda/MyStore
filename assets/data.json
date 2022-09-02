@@ -1,0 +1,55 @@
+[
+
+   {
+     "id": 1,
+     "name" : "Girly backpack",
+     "price" : 85,
+     "image": "./assets/backgirl.jpg",
+     "description":"Cute backpack for girls",
+     "quantity": 1
+   },
+   {
+     "id": 2,
+     "name" :"Boy backpack",
+     "price" : 90,
+     "image": "./assets/back.jpg",
+     "description":"Black backpack for boys",
+     "quantity": 1
+   },
+   {
+     "id": 3,
+     "name" : "Sunglasses",
+     "price" : 150,
+     "image": "./assets/sunglass.jpg",
+     "description":"Trendy women sunglasses",
+     "quantity": 1
+   },
+   {
+     "id": 4,
+     "name" :"Honey and milk book",
+     "price" : 10,
+     "image": "./assets/book.jfif",
+     "description":"Milk and honey quotes by rupi kaur",
+     "quantity": 1
+   },
+   {
+     "id": 5,
+     "name" : "Men sneakers",
+     "price" : 70,
+     "image": "./assets/sneakers.jpg",
+     "description":"Comfortable cool men sneakers",
+     "quantity": 1
+   },
+   {
+     "id": 6,
+     "name" : "Headphones",
+     "price" : 100,
+     "image": "./assets/head.jfif",
+     "description": "Wireless noise canceling headphones",
+     "quantity": 1
+   }
+
+
+
+
+]
